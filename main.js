@@ -2265,7 +2265,7 @@ function mapsSwitch(updateOnly, fromRecycle) {
         document.getElementById("mapGrid").style.display = "block";
 		var btnText = "Maps";
 		if (game.global.mapBonus > 0) btnText += " (" + game.global.mapBonus + ")";
-        document.getElementById("mapsBtn").innerHTML = btnText;
+        document.getElementById("mapsBtn").innerHTML = (document.getElementById("mapsBtn").innerHTML == "Abandon Soliders") ? "Abandon Soliders : btnText;
         document.getElementById("worldNumber").innerHTML = "</br>Lv: " + currentMapObj.level;
         document.getElementById("worldName").innerHTML = currentMapObj.name;
 		document.getElementById("mapBonus").innerHTML = "";
